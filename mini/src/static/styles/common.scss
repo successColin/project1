@@ -1,0 +1,39 @@
+@font-face {
+  font-family: opposans;
+  src: url('https://oss.dcqcjlb.com/51che_java_dev/20250813/9610642c82a847348ad247de5051e72b.ttf') format('truetype');
+}
+
+page {
+  font-family: opposans, sans-serif;
+  font-size: $u-font-base;
+  line-height: 1;
+  color: $u-main-color;
+  background-color: $u-bg-color;
+}
+
+.u-tabs {
+  .u-tabs__wrapper__nav {
+    .u-tabs__wrapper__nav__line {
+      bottom: 0;
+    }
+  }
+}
+
+.dsrz_card {
+  width: 670rpx;
+  padding: 30rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+
+  &-label {
+    font-weight: 500;
+    font-size: 28rpx;
+    color: #222222;
+  }
+
+  &-value {
+    font-weight: 500;
+    font-size: 28rpx;
+    color: #999999;
+  }
+}

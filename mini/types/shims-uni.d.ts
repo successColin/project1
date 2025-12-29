@@ -1,0 +1,3 @@
+interface Uni {
+  $UIKitNIM: any;
+}

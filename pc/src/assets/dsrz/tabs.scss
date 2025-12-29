@@ -1,0 +1,14 @@
+.dsrz-tabs {
+  margin: 16px 10px 0 10px;
+  --el-text-color-primary: #222222;
+  --dsrz-table-form-margin: 16px 0 0;
+  .el-tabs__header {
+    margin: 0;
+  }
+  .el-tabs__item {
+    padding: 0 16px;
+  }
+  .el-tabs__item.is-active {
+    font-weight: bold;
+  }
+}

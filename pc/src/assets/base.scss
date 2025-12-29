@@ -1,0 +1,65 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  /* 副主题颜色 */
+  --dsrz-subtopic-color: #f4f6f8;
+  /* 背景颜色 */
+  --dsrz-bg-color: linear-gradient(180deg, #162e45 0%, #061524 100%), #eff8ff;
+  /* 导航栏选中背景颜色 */
+  --dsrz-menu-item-bg-color: linear-gradient(
+    270deg,
+    rgba(76, 159, 245, 0) 0%,
+    rgba(34, 246, 254, 0.7) 100%
+  );
+  /* 导航栏选中左边颜色 */
+  --dsrz-menu-item-line-color: #22f6fe;
+
+  /* 导航栏展开宽度 */
+  --dsrz-aside-max-width: 200px;
+  /* 导航栏收起宽度 */
+  --dsrz-aside-min-width: 48px;
+  /* 导航栏顶部高度 */
+  --dsrz-header-height: 40px;
+
+  /* 图片上传组件尺寸 */
+  --dsrz-picture-card-size: 120px;
+  /* 图片上传组件边框颜色 */
+  --dsrz-picture-card-border-color: #6f6f6f;
+  /* 图片上传组件背景颜色 */
+  --dsrz-picture-card-background-color: #ffffff;
+
+  /* 表格搜索宽度 */
+  --dsrz-table-width: 210.6px;
+  --dsrz-table-width-2: 413.2px;
+  --dsrz-table-collapse-width: 241px;
+  --dsrz-table-collapse-width-2: 474px;
+  --dsrz-table-button-margin: 0 10px 16px;
+  --dsrz-table-margin: 10px;
+  --dsrz-table-pagination-margin: 0 10px;
+
+  /* 表单宽度 */
+  --dsrz-form-width: 256px;
+  --dsrz-form-width-2: 508px;
+  --dsrz-form-collapse-width: 294px;
+  --dsrz-form-collapse-width-2: 584px;
+  --dsrz-form-margin: 16px 10px 0;
+}
+
+.collapse {
+  --dsrz-table-width: var(--dsrz-table-collapse-width);
+  --dsrz-table-width-2: var(--dsrz-table-collapse-width-2);
+  --dsrz-form-width: var(--dsrz-form-collapse-width);
+  --dsrz-form-width-2: var(--dsrz-form-collapse-width-2);
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --dsrz-table-width: 306.6px;
+    --dsrz-table-width-2: 605.2px;
+    --dsrz-table-collapse-width: 337px;
+    --dsrz-table-collapse-width-2: 666px;
+    --dsrz-form-width: 376px;
+    --dsrz-form-width-2: 748px;
+    --dsrz-form-collapse-width: 414px;
+    --dsrz-form-collapse-width-2: 824px;
+  }
+}

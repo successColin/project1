@@ -1,0 +1,38 @@
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  // do not use same name, it will override.
+  /* 主题颜色 */ $colors:
+    (
+      'primary': (
+        'base': #178782,
+      )
+    ),
+  /* 边框圆角 */ $border-radius: ('base': 2px),
+  /* 边框颜色 */ $border-color: ('': #cecece),
+  /* 默认按钮样式修改 */ $button:
+    (
+      'border-color': transparent,
+      'bg-color': transparent,
+      'text-color': #6f6f6f,
+      'hover-bg-color': transparent,
+      'hover-border-color': #178782
+    ),
+  /* 表格样式修改 */ $table:
+    (
+      'text-color': #222222,
+      'header-bg-color': #e8f3f3,
+      'header-text-color': #222222
+    ),
+  /* 分页样式修改 */ $pagination: ('button-width': 28px, 'button-height': 28px),
+  /* 弹窗样式修改 */ $dialog: ('padding-primary': 0),
+  /* 菜单样式修改 */ $menu:
+    (
+      'active-color': #ffffff,
+      'text-color': #88929c,
+      'bg-color': transparent,
+      'border-color': transparent,
+      'level-padding': 24px
+    ),
+  /* 标签页样式修改 */ $tabs: ('header-height': 46px)
+);

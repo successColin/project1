@@ -1,0 +1,54 @@
+.dsrz-map {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  --dsrz-map-input-width: 100%;
+  .el-input {
+    --el-input-width: var(--dsrz-map-input-width);
+  }
+  &-location {
+    --dsrz-map-input-width: 200%;
+    padding: 0 12px 0 0;
+  }
+  &-input {
+    padding: 0 12px 0 0;
+  }
+  &-button {
+    padding: var(--dsrz-form-item-padding);
+  }
+  &-dialog {
+    margin: 0 20px;
+    &-item {
+      line-height: 1.5;
+      padding: 8px 12px;
+      &-title {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2px;
+      }
+      &-address {
+        font-size: 12px;
+        color: #999;
+        display: block;
+      }
+    }
+    &-baidu-map {
+      margin-top: 12px;
+      width: 100%;
+      height: 600px;
+      &-info-window {
+        padding: 8px;
+        h4 {
+          margin: 0 0 5px 0;
+          font-size: 16px;
+          color: #333;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+  }
+}

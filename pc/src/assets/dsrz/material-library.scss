@@ -1,0 +1,104 @@
+.dsrz-material-library {
+  display: flex;
+  width: 100%;
+
+  &-default {
+    --dsrz-material-library-categorize-margin-left: 0px;
+    --dsrz-material-library-file-table-margin: 0 0 0 20px;
+    --dsrz-table-button-margin: 0 0 16px 20px;
+    --dsrz-table-pagination-margin: 0 0 0 20px;
+    --dsrz-form-margin: 0 0 0 20px;
+    display: flex;
+    width: 100%;
+    margin: 16px 10px 0 10px;
+  }
+
+  &-dialog {
+    --dsrz-dialog-default-margin-right: 0;
+    --dsrz-material-library-categorize-margin-left: 20px;
+    --dsrz-material-library-file-table-margin: 0 20px;
+    --dsrz-table-button-margin: 0 20px 16px;
+    --dsrz-table-pagination-margin: 0 20px;
+    --dsrz-table-width: 220px;
+    --dsrz-form-margin: 0 20px;
+    display: flex;
+    width: 100%;
+  }
+  &-categorize {
+    width: calc(20% - var(--dsrz-material-library-categorize-margin-left));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: var(--dsrz-material-library-categorize-margin-left);
+    .el-tree {
+      --el-fill-color-blank: transparent;
+    }
+    &-btn {
+      margin-bottom: 16px;
+    }
+    &-btns {
+      position: absolute;
+      right: 0;
+      .el-button + .el-button {
+        margin-left: 0;
+      }
+    }
+  }
+  &-file {
+    width: 80%;
+    .el-empty {
+      height: 444px;
+    }
+    &-table {
+      display: flex;
+      flex-wrap: wrap;
+      margin: var(--dsrz-material-library-file-table-margin);
+      background: #ffffff;
+      &-column {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: calc(20% - 12px);
+        height: calc(50% - 16px);
+        margin: 8px 6px;
+        &-title {
+          width: 100%;
+          height: 32px;
+        }
+        .el-image {
+          width: 100%;
+          height: calc(100% - 76px);
+          margin-bottom: 12px;
+          background: var(--el-color-primary);
+        }
+        video {
+          width: 100%;
+          height: calc(100% - 76px);
+          margin-bottom: 12px;
+          background: var(--el-color-primary);
+          object-fit: none;
+        }
+        &-video {
+          position: absolute;
+          width: 100%;
+          height: calc(100% - 76px);
+          background: var(--el-overlay-color-lighter);
+          cursor: pointer;
+          div {
+            position: absolute;
+            bottom: 0;
+            right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 32px;
+            color: #ffffff;
+            font-size: var(--el-font-size-base);
+          }
+        }
+      }
+    }
+  }
+}

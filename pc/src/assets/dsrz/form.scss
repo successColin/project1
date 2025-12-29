@@ -1,0 +1,14 @@
+.dsrz-form {
+  margin: var(--dsrz-form-margin);
+  &-children {
+    div {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .el-col-24,
+  .el-col-100-115-114-122 {
+    --dsrz-form-item-padding: 0;
+  }
+}

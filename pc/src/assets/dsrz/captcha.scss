@@ -1,0 +1,102 @@
+.currency-captcha {
+  position: relative;
+  margin: 0 12px;
+  &-top {
+    position: relative;
+    height: 188px;
+    img {
+      width: 100%;
+    }
+    &-refresh {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      &:hover {
+        color: var(--el-color-primary);
+      }
+    }
+    &-tip {
+      &-success {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 24px);
+        height: 40px;
+        color: #ffffff;
+        background: var(--el-color-success-light-3);
+        padding: 0 12px;
+      }
+      &-danger {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 24px);
+        height: 40px;
+        color: #ffffff;
+        background: var(--el-color-danger-light-3);
+        padding: 0 12px;
+      }
+    }
+  }
+  &-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57px;
+    height: 188px;
+    img {
+      width: 100%;
+    }
+  }
+  &-bottom {
+    position: relative;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 12px;
+    &-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-line {
+      position: absolute;
+      height: 100%;
+      background: var(--dsrz-menu-item-line-color);
+      box-shadow: 0 0 2px var(--el-color-primary);
+    }
+    &-slider {
+      position: relative;
+      &-thumb {
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 57px;
+        height: 40px;
+        box-shadow: 0 0 2px #888888;
+        border-radius: 4px;
+        background: #ffffff;
+        cursor: pointer;
+        &:hover {
+          background: var(--el-color-primary);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

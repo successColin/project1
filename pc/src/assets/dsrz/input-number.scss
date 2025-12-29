@@ -1,0 +1,17 @@
+.dsrz-input-number {
+  width: 100%;
+  &-prefix {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 32px;
+    margin-right: var(--dsrz-input-number-margin);
+  }
+  &-suffix {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 32px;
+    margin-left: var(--dsrz-input-number-margin);
+  }
+}

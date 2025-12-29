@@ -1,0 +1,43 @@
+.dsrz-upload {
+  width: 100%;
+
+  &-title {
+    font-family:
+      PingFang SC,
+      PingFang SC;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 4px;
+    color: var(--el-text-color-secondary);
+  }
+
+  .el-upload {
+    flex-direction: column;
+    --el-text-color-secondary: var(--dsrz-picture-card-border-color, #909399);
+    --el-upload-picture-card-size: var(--dsrz-picture-card-size, 148px);
+    --el-border-color-darker: var(--dsrz-picture-card-border-color, #cdd0d6);
+    --el-fill-color-lighter: var(--dsrz-picture-card-background-color, #fafafa);
+  }
+
+  .el-upload--picture-card:hover {
+    --el-text-color-secondary: var(--el-color-primary);
+  }
+
+  .el-upload-list {
+    --el-upload-list-picture-card-size: var(--dsrz-picture-card-size, 148px);
+  }
+
+  .el-upload.is-disabled {
+    display: none;
+  }
+
+  .el-upload__tip {
+    line-height: 18px;
+  }
+
+  &-disabled {
+    .el-upload {
+      display: none;
+    }
+  }
+}

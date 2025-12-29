@@ -1,0 +1,29 @@
+@use './dsrz/captcha.scss';
+@use './dsrz/card.scss';
+@use './dsrz/details.scss';
+@use './dsrz/dialog.scss';
+@use './dsrz/form.scss';
+@use './dsrz/image-cropper.scss';
+@use './dsrz/input-number.scss';
+@use './dsrz/input.scss';
+@use './dsrz/map.scss';
+@use './dsrz/material-library.scss';
+@use './dsrz/table.scss';
+@use './dsrz/tabs.scss';
+@use './dsrz/tag.scss';
+@use './dsrz/upload.scss';
+
+.dsrz-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.el-icon {
+  width: auto !important;
+  height: auto !important;
+}

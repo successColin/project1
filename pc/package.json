@@ -1,0 +1,61 @@
+{
+  "name": "km_web_template",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "build:stage": "run-p type-check \"build-only:stage {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build --mode production",
+    "build-only:stage": "vite build --mode staging",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.9.0",
+    "pinia": "^2.2.4",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.17.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "@vue/eslint-config-prettier": "^10.0.0",
+    "@vue/eslint-config-typescript": "^14.1.1",
+    "@vue/tsconfig": "^0.5.1",
+    "@vueuse/core": "^13.2.0",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "^5.1.12",
+    "ali-oss": "^6.23.0",
+    "axios": "^1.7.7",
+    "crypto-js": "^4.2.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-vue": "^9.29.0",
+    "js-cookie": "^3.0.5",
+    "js-md5": "^0.8.3",
+    "lodash": "^4.17.21",
+    "mammoth": "^1.9.0",
+    "mitt": "^3.0.1",
+    "npm-run-all2": "^7.0.1",
+    "nprogress": "^0.2.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.80.5",
+    "simple-git-hooks": "^2.13.0",
+    "typescript": "~5.6.0",
+    "unplugin-auto-import": "^0.19.0",
+    "unplugin-vue-components": "^0.27.5",
+    "vite": "^5.4.10",
+    "vue-baidu-map-3x": "^1.0.40",
+    "vue-tsc": "^2.1.6"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "node ./scripts/verify-commit.js"
+  }
+}
