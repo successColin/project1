@@ -32,13 +32,9 @@
       <view
         class="card-header mb-4 flex items-center justify-between border-b border-gray-100 pb-2"
       >
-        <text class="text-base font-bold">
-          我的订单
-        </text>
+        <text class="text-base font-bold"> 我的订单 </text>
         <view class="flex items-center" @click="goToOrder(0)">
-          <text class="mr-1 text-xs text-gray-400">
-            全部订单
-          </text>
+          <text class="mr-1 text-xs text-gray-400"> 全部订单 </text>
           <u-icon name="arrow-right" color="#ccc" size="12" />
         </view>
       </view>
@@ -48,27 +44,21 @@
           @click="goToOrder(1)"
         >
           <u-icon name="scan" size="28" color="#333" />
-          <text class="mt-2 text-xs text-gray-600">
-            待核销
-          </text>
+          <text class="mt-2 text-xs text-gray-600"> 待核销 </text>
         </view>
         <view
           class="grid-item flex flex-col items-center"
           @click="goToOrder(2)"
         >
           <u-icon name="chat" size="28" color="#333" />
-          <text class="mt-2 text-xs text-gray-600">
-            待评价
-          </text>
+          <text class="mt-2 text-xs text-gray-600"> 待评价 </text>
         </view>
         <view
           class="grid-item flex flex-col items-center"
           @click="goToOrder(0)"
         >
           <u-icon name="list" size="28" color="#333" />
-          <text class="mt-2 text-xs text-gray-600">
-            全部订单
-          </text>
+          <text class="mt-2 text-xs text-gray-600"> 全部订单 </text>
         </view>
       </view>
     </view>
@@ -100,27 +90,27 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import HomeTabs from '@/components/HomeTabs/index.vue';
+import { ref } from "vue";
+import HomeTabs from "@/components/HomeTabs/index.vue";
 
 const userInfo = ref({
-  avatar: 'https://cdn.uviewui.com/uview/album/1.jpg', // 默认头像
-  nickname: '轻舞飞扬',
-  points: 1000,
+  avatar: "", // 默认头像
+  nickname: "",
+  points: 0,
 });
 
 const goToOrder = (status: number) => {
-  console.log('Navigate to order with status:', status);
+  console.log("Navigate to order with status:", status);
   // uni.navigateTo({ url: `/pages/order/list?status=${status}` })
 };
 
 const handleLogout = () => {
   uni.showModal({
-    title: '提示',
-    content: '确定要退出登录吗？',
+    title: "提示",
+    content: "确定要退出登录吗？",
     success: (res) => {
       if (res.confirm) {
-        console.log('用户点击确定');
+        console.log("用户点击确定");
         // 执行退出逻辑
       }
     },
@@ -132,7 +122,6 @@ const handleLogout = () => {
 .page-container {
   min-height: 100vh;
   background-color: #f5f7fa;
-  padding-bottom: 100rpx; /* 为底部tab留出空间 */
 }
 
 .header-section {
